@@ -6,6 +6,7 @@ local buddy = {}
 local function with_defaults(options)
   options = options or {}
   local open_linter_error_in_browser = options.open_linter_error_in_browser or {}
+  local add_debugger = options.add_debugger or {}
   local enabled_commands = {
     "prepend_file_with_magic_comment",
     "copy_linter_error",
@@ -17,6 +18,9 @@ local function with_defaults(options)
     enabled_commands = options.enabled_commands or enabled_commands,
     open_linter_error_in_browser = {
       command = open_linter_error_in_browser.command or "open"
+    },
+    add_debugger = {
+      command = add_debugger.command or "binding.pry"
     }
   }
 end

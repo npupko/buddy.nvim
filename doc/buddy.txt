@@ -48,7 +48,7 @@ Install the plugin using your preferred package manager, e.g., lazy.nvim:
 4. Functions                                                *buddy-functions*
 
 add_debugger()~
-    Adds a binding.pry line to the current file if the file type is supported
+    Adds debugger line to the current file if the file type is supported
     (Ruby, rb, ru).
 
 prepend_file_with_magic_comment()~
@@ -86,9 +86,13 @@ setup(options)~
             "open_linter_error_in_browser",
             "add_debugger",
           },
-        -- Configure the command to open the browser
+          -- Configure the command to open the browser
           open_linter_error_in_browser = {
             command = "open"
+          },
+          -- Configure the debugger command
+          add_debugger = {
+            command = "debugger"
           }
         })
 

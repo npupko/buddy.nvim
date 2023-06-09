@@ -11,4 +11,14 @@ function helpers.contains(list, x)
 	return false
 end
 
+function helpers.exec_function_on_linter_error_code(func)
+  local current_line = vim.api.nvim_win_get_cursor(0)[1] - 1
+  local buffer_number = vim.api.nvim_get_current_buf()
+  local result = vim.diagnostic.get(buffer_number, { lnum = current_line })
+  if result[1].source == 'rubocop' then
+    func(result[1])
+  end
+end
+
+
 return helpers

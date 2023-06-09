@@ -54,17 +54,20 @@ Pass a table of options to the setup function to configure the plugin. The follo
 ```lua
 local buddy = require('buddy')
 buddy.setup({
-  -- Configure which commands are enabled
-  enabled_commands = {
-    "prepend_file_with_magic_comment",
-    "copy_linter_error",
-    "open_linter_error_in_browser",
-    "add_debugger",
-  },
--- Configure the command to open the browser
-  open_linter_error_in_browser = {
-    command = "open"
-  }
+    -- Configure which commands are enabled
+    enabled_commands = {
+        "prepend_file_with_magic_comment",
+        "copy_linter_error",
+        "open_linter_error_in_browser",
+        "add_debugger",
+    },
+    -- Configure the command to open the browser
+    open_linter_error_in_browser = {
+        command = "open"
+    },
+    add_debugger = {
+        command = "binding.pry"
+    }
 })
 ```
 

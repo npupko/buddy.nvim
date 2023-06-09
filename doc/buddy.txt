@@ -4,25 +4,25 @@
 Table of Contents                                    *buddy-table-of-contents*
 
 1. Buddy.nvim                                               |buddy-buddy.nvim|
-  - What is buddy.nvim?                 |buddy-buddy.nvim-what-is-buddy.nvim?|
-  - Features                                       |buddy-buddy.nvim-features|
-  - Installation                               |buddy-buddy.nvim-installation|
-  - Functions                                     |buddy-buddy.nvim-functions|
-  - Configuration                             |buddy-buddy.nvim-configuration|
-  - Contributing                               |buddy-buddy.nvim-contributing|
+  - What is buddy.nvim?                            |buddy-what-is-buddy.nvim?|
+  - Features                                                  |buddy-features|
+  - Installation                                          |buddy-installation|
+  - Functions                                                |buddy-functions|
+  - Configuration                                        |buddy-configuration|
+  - Contributing                                          |buddy-contributing|
 
 ==============================================================================
 1. Buddy.nvim                                               *buddy-buddy.nvim*
 
 
-WHAT IS BUDDY.NVIM?                     *buddy-buddy.nvim-what-is-buddy.nvim?*
+WHAT IS BUDDY.NVIM?                                *buddy-what-is-buddy.nvim?*
 
 Buddy.nvim is a plugin for Neovim that provides various handy functions for
 Ruby developers. The plugin can be called via command-line mode using :Buddy or
 by requiring the module in Lua code.
 
 
-FEATURES                                           *buddy-buddy.nvim-features*
+FEATURES                                                      *buddy-features*
 
 - Add a debugger line `(binding.pry)` to your Ruby code
 - Prepend a file with a magic comment (` frozen_string_literal: true`)
@@ -30,7 +30,7 @@ FEATURES                                           *buddy-buddy.nvim-features*
 - Open linter error documentation in browser
 
 
-INSTALLATION                                   *buddy-buddy.nvim-installation*
+INSTALLATION                                              *buddy-installation*
 
 Install the plugin using your preferred package manager, e.g., lazy.nvim:
 
@@ -51,7 +51,7 @@ Install the plugin using your preferred package manager, e.g., lazy.nvim:
 <
 
 
-FUNCTIONS                                         *buddy-buddy.nvim-functions*
+FUNCTIONS                                                    *buddy-functions*
 
 
 ADD_DEBUGGER()
@@ -89,7 +89,7 @@ GET_COMMANDS()
 Returns a table of available function names in the plugin.
 
 
-CONFIGURATION                                 *buddy-buddy.nvim-configuration*
+CONFIGURATION                                            *buddy-configuration*
 
 
 SETUP(OPTIONS)
@@ -118,7 +118,7 @@ following options are available:
 <
 
 
-CONTRIBUTING                                   *buddy-buddy.nvim-contributing*
+CONTRIBUTING                                              *buddy-contributing*
 
 All contributions are welcome! Just open a pull request.
 

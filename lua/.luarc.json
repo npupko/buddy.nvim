@@ -1,0 +1,11 @@
+{
+    "workspace.library": [
+        "/Users/random/.local/share/nvim/lazy/neodev.nvim/types/stable",
+        "/opt/homebrew/Cellar/neovim/0.9.1/share/nvim/runtime/lua",
+        "/Users/random/.local/share/nvim/lazy/neodev.nvim/types/stable",
+        "/opt/homebrew/Cellar/neovim/0.9.1/share/nvim/runtime/lua",
+        "/Users/random/Projects/npupko/buddy.nvim/lua",
+        "/Users/random/Projects/npupko/buddy.nvim/lua",
+        "${3rd}/luv/library"
+    ]
+}
